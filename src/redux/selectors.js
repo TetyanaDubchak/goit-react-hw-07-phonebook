@@ -14,6 +14,5 @@ export const selectVisibleContacts = createSelector(
     const filteredList = () => {
         return contacts.filter(contact => contact.name.toLowerCase().includes(filters.toLowerCase()))
     };
-
     return filteredList();
 })
